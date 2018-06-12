@@ -1,20 +1,43 @@
-<h3>Dashboard View</h3>
+<nav class="banner">
+  <h3>Dashboard View</h3>
+</nav>
+
+<body>
+
+<a *ngFor="let enviroment of enviroments" class="layout">
+  <mat-list>
+   <mat-list-item class="name">
+     {{ enviroment.name }}
+   </mat-list-item>
+   <mat-list-item class="version">
+     {{ enviroment.version }}
+   </mat-list-item>
+   <mat-list-item *ngFor="let string of enviroment.modules" class="module">
+     {{ string }}
+   </mat-list-item>
+  </mat-list>
+</a>
+
+</body>
 
 
-
-
-
-  
-<mat-card *ngFor="let enviroment of enviroments">
-  <mat-card-title>
-    {{ enviroment.name }}
-  </mat-card-title>
-  <mat-card-subtitle>
-    version: {{ enviroment.version }}
-  </mat-card-subtitle>
-  <mat-card-content *ngFor="let string of enviroment.modules">
-    {{ enviroment.modules }}
+<!--
+<a *ngFor="let enviroment of enviroments" class="col-1-3">
+  <mat-card>
+    <mat-card-title>
+      {{ enviroment.name }}
+    </mat-card-title>
+    <mat-card-subtitle>
+      version: {{ enviroment.version }}
+    </mat-card-subtitle>
+    <mat-card-content>
+      <mat-list dense>
+        <mat-list-item *ngFor="let string of enviroment.modules">
+          {{ enviroment.modules }}
+        </mat-list-item>
+      </mat-list>
   </mat-card-content>
-</mat-card>
-  
+  </mat-card>
+</a>
 
+-->

@@ -10,15 +10,11 @@
   background-color: #607D8B;
   border-radius: 2px;
 }
-
 [class*='col-'] {
   float: left;
   padding-right: 20px;
   padding-bottom: 20px;
 }
-
-
-
 [class*='col-']:last-of-type {
   padding-right: 0;
 }
@@ -27,15 +23,23 @@
 }*/
 
 .mat-card-content {
-  
+  font-size: 10px;
 }
 
 .mat-card {
-  float: left;
-  min-width: 30%;
-  padding: 50px;
 }
 
-.stretch {
-  
+.banner {
+  background-color: red;
+}
+
+.layout {
+  float: left;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: black;
+}
+
+body {
+  color: blue;
 }

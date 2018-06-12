@@ -6,7 +6,12 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { EnviromentComponent } from './enviroment/enviroment.component';
 import { AppRoutingModule } from './/app-routing.module';
 
-import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatCheckboxModule,
+  MatCardModule,
+  MatListModule
+} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -19,7 +24,8 @@ import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/mate
     AppRoutingModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule
   ],
   exports: [
     MatButtonModule,
